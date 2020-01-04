@@ -40,5 +40,5 @@ exports.info = async ctx => {
     ctx.throw(500, e);
   }
 
-  ctx.body = info[info.length];
+  ctx.body = info[info.length - 1];
 };

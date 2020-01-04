@@ -28,5 +28,5 @@ exports.info = async ctx => {
     ctx.throw(500, e);
   }
 
-  ctx.body = signal[signal.length];
+  ctx.body = signal[signal.length - 1];
 }
