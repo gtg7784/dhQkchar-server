@@ -1,0 +1,25 @@
+{
+  "name": "dhQkchar-server",
+  "version": "1.0.0",
+  "description": "2020 [LPWA] Seoul Hardware Hackathon - Koa",
+  "main": "index.js",
+  "repository": "https://github.com/gtg7784/dhQkchar-server",
+  "author": "gtg7784",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "mongoose": "^5.8.4"
+  },
+  "scripts": {
+    "start": "node src",
+    "dev": "nodemon --watch src/ src/index.js",
+    "db": "mongod --dbpath ./db"
+  }
+}
