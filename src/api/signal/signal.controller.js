@@ -20,7 +20,7 @@ exports.update = async ctx => {
   ctx.body = signal;
 };
 
-exports.info = async () => {
+exports.info = async ctx => {
   let signal = null;
   try {
     signal = await Signal.find().exec();
