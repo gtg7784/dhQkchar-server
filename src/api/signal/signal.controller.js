@@ -19,3 +19,14 @@ exports.update = async ctx => {
 
   ctx.body = signal;
 };
+
+exports.info = async () => {
+  let signal = null;
+  try {
+    signal = await Signal.find().exec();
+  } catch (e) {
+    ctx.throw(500, e);
+  }
+
+  ctx.body = signal;
+}
