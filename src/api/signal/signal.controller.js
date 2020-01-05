@@ -30,3 +30,14 @@ exports.info = async ctx => {
 
   ctx.body = signal[signal.length - 1];
 }
+
+exports.time = async ctx => {
+  let signal = null;
+  try {
+    signal = await Signal.find().exec();
+  } catch (e) {
+    ctx.throw(500, e);
+  }
+
+  ctx.body = signal[signal.length - 1].time;
+}
